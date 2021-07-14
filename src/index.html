@@ -32,7 +32,7 @@
 							<a href="#" class="menu_link">Контакты</a>
 						</li>
 						<li class="menu_item">
-							<a href="#" class="menu_link">Оставить заявку</a>
+							<a href="#" id="menu_request" class="menu_link">Оставить заявку</a>
 						</li>
 					</ul>
 				</div>
@@ -83,7 +83,7 @@
 							в личном кабинете. Бонуcная система.Помимо выполненной работы по
 							заказам, компания начисляет бонусы за пиковое время. <br /><br />
 							Мы одни из партнеров и зарекомендовали себя как одна из лучших
-							команд в городе Москве. Водители у нас зарабатывают от 80000-
+							команд в городе Москве. Водители у нас зарабатывают от 80000 -
 							120000 в месяц.
 						</div>
 					</div>
@@ -429,9 +429,22 @@
 						<a href="#"><img src="img/app/windows_store.png" alt=""></a>
 					</div>
 				</div>
-				
 			</div>
 		</footer>
+
+		<div class="overlay">
+			<div class="modal" id="general">
+				<div class="modal__close">&times;</div>
+				<div class="modal__subtitle">Просто заполните форму заявки</div>
+				<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+				<form class="feed-form" action="#">
+					<input required name="name" placeholder="Ваше имя" type="text">
+					<input required name="phone" placeholder="Ваш телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+	
+					<button class="modal__btn">отправить заявку</button>
+				</form>
+			</div>
+
 		<script src='js/script.js'></script>
 
 	</body>
